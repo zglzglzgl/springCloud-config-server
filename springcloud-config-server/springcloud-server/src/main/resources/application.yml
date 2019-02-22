@@ -1,0 +1,15 @@
+server:
+  port: 8083
+
+  spring:
+    application:
+      name: config-server
+    cloud:
+      config:
+        server:
+          git:
+            uri: https://github.com/zglzglzgl/springCloud-config-server.git
+            searchPaths: '{application}'
+            username: 714490049@qq.com
+            password: zgl285639
+        label: master

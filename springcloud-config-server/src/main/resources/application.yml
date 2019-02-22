@@ -1,0 +1,15 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: config-server
+    cloud:
+      config:
+        server:
+          git:
+            uri: https://github.com/zglzglzgl/springCloud-config-server.git
+            searchPaths: '{application}' #application 代表客户端的名称，目的是根据项目名称将配置文件区分开
+            username:
+            password:
+        label: master
