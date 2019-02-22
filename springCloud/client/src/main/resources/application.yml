@@ -1,0 +1,19 @@
+#服务端口号
+server:
+  port: 8902
+#此处需要加上该服务名称
+spring:
+  application:
+    name: client
+
+eureka:
+  client:
+    #向注册中心注册自己,这两处默认值都为true，
+    register-with-eureka: true
+    #注册中心需要去发现自己
+    fetch-registry: true
+    #设置服务注册中心的URL，此处则表示为http://localhost:8901/eureka/
+    serviceUrl:
+       defaultZone: http://localhost:8901/eureka/
+
+
